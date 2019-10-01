@@ -5,28 +5,82 @@
   <meta charset="utf-8">
   <title>Believe Health</title>
 
-  <!-- Main CSS -->
-  <link href="assets/CSS/main.css" rel="stylesheet">
-
-  <!--Import Google Icon Font-->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css"  media="screen,projection"/>
-
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- Fonts and CSS Reset -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+
+  <!-- PrismJS: Syntax Highlighting -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.13.0/themes/prism.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.13.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.13.0/plugins/normalize-whitespace/prism-normalize-whitespace.js"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/solid.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/fontawesome.css">
+
+  <!-- Mustard UI -->
+  <link rel="stylesheet" href="node_modules/mustard-ui/dist/css/mustard-ui.min.css">
+
+  <!-- Main CSS -->
+  <link href="assets/CSS/main.css" rel="stylesheet">
 </head>
 
 </head>
 
 <body>
 
-  <div class="container">
-    <p class="col s12">Hello, world!</p>
+  <div id="navbar">
+    <img id="believeLogo" src="assets/images/believe_logo_white.png"/>
+
+    <div id="navbarLinks" class="display-lg-up">
+      <a href="#">About Us</a>
+      <a href="#">Doctors</a>
+      <a href="#">Patients</a>
+      <a href="#">Find A Doctor</a>
+      <a href="#">Contact Us</a>
+    </div>
+  </div>
+
+  <header>
+    <h1 class="title">PRIMARY CARE PHYSICIANS</h1>
+    <h2 class="subtitle">We strengthen relationships between patients and their doctors</h2>
+    <button class="get-started button button-primary button-large" id="contactButton">CONTACT</button>
+  </header>
+
+  <div class="row">
+    <div class="col" id="believeHealth">
+      <h1>Believe Health</h1>
+      <h3>Empowers old school relationships through new age technology</h3>
+    </div>
+  </div>
+
+  <div class="container" id="problemSection">
+    <div class="row">
+      <div class="col col-lg-6">
+        <h1 id="probTitle">The Problem</h1>
+        <h4 id="probDesc">Healthcare today is built around in-office appointments that 
+          are dictated by insurance companies and it isn't working...</h3>
+      </div>
+      <div class="col col-lg-6">
+          <div id="problemList">
+              <div id="middleProb">  
+                  <ul id="prob2"><li>Doctors jam more appointments into the day to maintain their income.</li></ul>
+              </div>
+              <div id="outerProbs">
+                  <ul id="prob1"><li>Insurance companies keep cutting payments to doctors offices and raising deductibles.</li></ul>
+                  <ul id="prob3"><li>And often an office appointment is not needed to answer a question or to provide a
+                      diagnosis that could be covered through a virtual consult.
+                  </li></ul>
+              </div>
+          </div>
+      </div>
+    </div>
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
 
 </html>

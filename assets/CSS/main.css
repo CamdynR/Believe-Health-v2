@@ -1,0 +1,166 @@
+button:hover {
+    opacity: 1 !important;
+}
+
+header {
+    background-color: #1AADE4;
+}
+
+.title, .subtitle {
+    color: white !important;
+}
+
+#believeLogo {
+    margin: 10px 0 0 10px;
+    width: 200px;
+}
+
+#contactButton {
+    background-color: #EA1E49;
+    border-color: #EA1E49;
+    margin-top: 20px;
+}
+
+#navbar {
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+}
+
+#navbarLinks {
+    float: right;
+    font-size: 1.5rem;
+    margin: 10px 5px 0 0 ;
+}
+
+#navbarLinks a {
+    color: white !important;
+    margin-right: 15px;
+}
+
+#navbarLinks a:hover {
+    opacity: 1 !important;
+    border-bottom: 2px solid rgb(20, 144, 189);
+}
+
+#believeHealth {
+    text-align: center !important;
+    margin: 200px auto 200px auto;
+    max-width: 680px;
+}
+
+#believeHealth h1 {
+    color: #1AADE4;
+}
+
+#believeHealth h3 {
+    color: black;
+    line-height: 2.3rem;
+    margin-top: 10px;
+}
+
+#middleProb {
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 0px 40px 12px #e0e0e0;
+    margin-top: 205px;
+    margin-left: 0px;
+    height: 170px;
+    width: 400px;
+}
+
+#outerProbs {
+    background-color: white;
+    box-shadow: 0px 0px 40px 12px #e0e0e0;
+    height: 500px;
+    margin-top: 50px;
+    padding-top: -1px;
+}
+
+#prob1 {
+    margin-left: 45px;
+    margin-top: 100px;
+
+    background: url('../images/diamond.png') no-repeat left 69px;
+    background-size: 25px;
+    display: block;
+    list-style-type: none;
+    padding-left: 45px;
+    padding-top: 55px;
+    width: 370px;
+}
+
+#prob2 {
+    background: url('../images/diamond.png') no-repeat left 50px;
+    background-size: 25px;
+    display: block;
+    list-style-type: none;
+    margin-left: 10px;
+    padding-left: 45px;
+    padding-top: 36px;
+    width: 370px;
+}
+
+#prob2 li {
+    width: 350px;
+}
+
+#prob3 {
+    margin-left: 45px;
+    margin-top: 266px;
+
+    background: url('../images/diamond.png') no-repeat left 30px;
+    background-size: 25px;
+    display: block;
+    list-style-type: none;
+    padding-left: 45px;
+    width: 370px;
+}
+
+#prob1 li, 
+#prob2 li,
+#prob3 li {
+    font-size: 1.3rem;
+}
+
+#problemList {
+    margin-left: 30px;
+}
+
+#problemSection {
+   margin-bottom: 200px;
+}
+
+#probTitle,
+#probDesc {
+    max-width: 520px;
+}
+
+#probDesc {
+    color: #8c8c8c;
+    font-weight: 400;
+}
+
+#probTitle {
+    color: #EA1E49;
+}
+
+@media only screen and (max-width: 1024px) {
+    #believeLogo {
+        width: 170px;
+    }
+
+    #probTitle,
+    #probDesc {
+       text-align: center;
+       margin: 0 auto;
+    }
+
+
+}
+
+@media only screen and (max-width: 450px) {
+    #believeLogo {
+        width: 130px;
+    }
+}
