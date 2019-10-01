@@ -62,31 +62,31 @@ header {
 #middleProb {
     position: absolute;
     background-color: white;
-    box-shadow: 0px 0px 40px 12px #e0e0e0;
-    margin-top: 205px;
-    margin-left: 0px;
-    height: 170px;
-    width: 400px;
+    box-shadow: 0px 0px 40px 8px #e0e0e0;
+    margin-top: 135px;
+    margin-left: -25px;
+    height: 130px;
+    width: 472px;
 }
 
 #outerProbs {
     background-color: white;
     box-shadow: 0px 0px 40px 12px #e0e0e0;
-    height: 500px;
-    margin-top: 50px;
+    height: 400px;
+    margin-top: -75px;
     padding-top: -1px;
 }
 
 #prob1 {
-    margin-left: 45px;
-    margin-top: 100px;
+    margin-left: 35px;
+    margin-top: 0px;
 
-    background: url('../images/diamond.png') no-repeat left 69px;
+    background: url('../images/diamond.png') no-repeat left 64px;
     background-size: 25px;
     display: block;
     list-style-type: none;
     padding-left: 45px;
-    padding-top: 55px;
+    padding-top: 15px;
     width: 370px;
 }
 
@@ -95,9 +95,9 @@ header {
     background-size: 25px;
     display: block;
     list-style-type: none;
-    margin-left: 10px;
+    margin-left: 60px;
     padding-left: 45px;
-    padding-top: 36px;
+    padding-top: 26px;
     width: 370px;
 }
 
@@ -107,7 +107,7 @@ header {
 
 #prob3 {
     margin-left: 45px;
-    margin-top: 266px;
+    margin-top: 171px;
 
     background: url('../images/diamond.png') no-repeat left 30px;
     background-size: 25px;
@@ -128,12 +128,16 @@ header {
 }
 
 #problemSection {
-   margin-bottom: 200px;
+    margin: 0 auto 200px auto;
+}
+
+#problemText {
+    margin: 0 auto 0 auto;
 }
 
 #probTitle,
 #probDesc {
-    max-width: 520px;
+    max-width: 460px;
 }
 
 #probDesc {
@@ -150,17 +154,69 @@ header {
         width: 170px;
     }
 
+    #middleProb {
+        left: 50%;
+        margin-top: 60px; 
+        margin-left: -236px;
+        position: absolute;
+        z-index: 9;
+    }
+
+    #outerProbs {
+        left: 50%;
+        margin-left: -211px;
+        position: absolute;
+        width: 422px;
+    }
+
     #probTitle,
     #probDesc {
        text-align: center;
        margin: 0 auto;
     }
 
+    #problemList {
+        margin-top: 160px;
+    }
 
+    #problemSection {
+        margin-top: 100px;
+        margin-bottom: 600px;
+    }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
+    #believeHealth {
+        width: 310px;
+    }
+
     #believeLogo {
         width: 130px;
+    }
+    
+    #middleProb {
+        margin-left: -145px;
+        width: 290px;
+    }
+
+    #outerProbs {
+        left: 50%;
+        margin-left: -160px;
+        position: absolute;
+        width: 320px;
+    }
+
+    #prob2 li {
+        margin: 0 !important;
+        width: 290px;
+    }
+
+    #problemList {
+        margin-top: 160px;
+    }
+
+    #problemSection {
+        margin-top: 100px;
+        margin-bottom: 600px;
     }
 }
