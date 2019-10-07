@@ -1,222 +1,95 @@
-button:hover {
-    opacity: 1 !important;
+html, body {
+    height: 100%;
+    font-family: 'Raleway', sans-serif !important;
 }
 
-header {
+h1, h2 {
+    font-weight: 800;
+}
+
+.headerDiv {
+    background-image: url("../images/background.jpg");
     background-color: #1AADE4;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90%; 
 }
 
-.title, .subtitle {
-    color: white !important;
+#headerContent {
+    margin-top: -96px;
+    text-shadow: 2px 3px 3px rgb(0, 0, 0, 0.8);
 }
 
-#believeLogo {
-    margin: 10px 0 0 10px;
-    width: 200px;
-}
-
-#contactButton {
+#headerContent button {
     background-color: #EA1E49;
-    border-color: #EA1E49;
-    margin-top: 20px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    height: 45px;
+    width: 130px;
 }
 
 #navbar {
+    /*background-color: rgb(0,0,0,0.3) !important;*/
+    z-index: 4001;
+}
+
+#navbarLogo {
+    width: 120px;
+}
+
+#pdBottomText {
+    bottom: 0;
+    left: 50%;
+    margin-left: -110px;
     position: absolute;
-    width: 100%;
-    z-index: 5;
+    width: 220px;
 }
 
-#navbarLinks {
-    float: right;
-    font-size: 1.5rem;
-    margin: 10px 5px 0 0 ;
-}
-
-#navbarLinks a {
-    color: white !important;
-    margin-right: 15px;
-}
-
-#navbarLinks a:hover {
-    opacity: 1 !important;
-    border-bottom: 2px solid rgb(20, 144, 189);
-}
-
-#believeHealth {
-    text-align: center !important;
-    margin: 200px auto 200px auto;
-    max-width: 680px;
-}
-
-#believeHealth h1 {
-    color: #1AADE4;
-}
-
-#believeHealth h3 {
-    color: black;
-    line-height: 2.3rem;
-    margin-top: 10px;
-}
-
-#middleProb {
-    position: absolute;
-    background-color: white;
-    box-shadow: 0px 0px 40px 8px #e0e0e0;
-    margin-top: 135px;
-    margin-left: -25px;
-    height: 130px;
-    width: 472px;
-}
-
-#outerProbs {
-    background-color: white;
+#pdInnerDiv {
+    background-color: white; 
     box-shadow: 0px 0px 40px 12px #e0e0e0;
-    height: 400px;
-    margin-top: -75px;
-    padding-top: -1px;
+    height: 150px;
+    margin-top: -300px !important;
+    z-index: 3001;
 }
 
-#prob1 {
-    margin-left: 35px;
-    margin-top: 0px;
-
-    background: url('../images/diamond.png') no-repeat left 64px;
-    background-size: 25px;
-    display: block;
-    list-style-type: none;
-    padding-left: 45px;
-    padding-top: 15px;
-    width: 370px;
+#pdInnerDiv p {
+    height: 60px;
+    left: 50%;
+    margin-left: -130px;
+    margin-top: -30px;
+    position: absolute;
+    top: 50%;
+    width: 260px;
 }
 
-#prob2 {
-    background: url('../images/diamond.png') no-repeat left 50px;
-    background-size: 25px;
-    display: block;
-    list-style-type: none;
-    margin-left: 60px;
-    padding-left: 45px;
-    padding-top: 26px;
-    width: 370px;
+#pdOuterDiv {
+    background-color: white; 
+    box-shadow: 0px 0px 40px 12px #e0e0e0;
+    height: 450px;
 }
 
-#prob2 li {
-    width: 350px;
+.problemDiv p {
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    margin: 0;
 }
 
-#prob3 {
-    margin-left: 45px;
-    margin-top: 171px;
-
-    background: url('../images/diamond.png') no-repeat left 30px;
-    background-size: 25px;
-    display: block;
-    list-style-type: none;
-    padding-left: 45px;
-    width: 370px;
-}
-
-#prob1 li, 
-#prob2 li,
-#prob3 li {
-    font-size: 1.3rem;
-}
-
-#problemList {
-    margin-left: 30px;
-}
-
-#problemSection {
-    margin: 0 auto 200px auto;
-}
-
-#problemText {
-    margin: 0 auto 0 auto;
-}
-
-#probTitle,
-#probDesc {
-    max-width: 460px;
-}
-
-#probDesc {
-    color: #8c8c8c;
-    font-weight: 400;
-}
-
-#probTitle {
-    color: #EA1E49;
-}
-
-@media only screen and (max-width: 1024px) {
-    #believeLogo {
-        width: 170px;
-    }
-
-    #middleProb {
-        left: 50%;
-        margin-top: 60px; 
-        margin-left: -236px;
-        position: absolute;
-        z-index: 9;
-    }
-
-    #outerProbs {
-        left: 50%;
-        margin-left: -211px;
-        position: absolute;
-        width: 422px;
-    }
-
-    #probTitle,
-    #probDesc {
-       text-align: center;
-       margin: 0 auto;
-    }
-
-    #problemList {
-        margin-top: 160px;
-    }
-
-    #problemSection {
-        margin-top: 100px;
-        margin-bottom: 600px;
+/* Media Queries for Small Screens*/
+@media only screen and (max-width: 767px) {
+    .nav-item {
+        text-align: right !important;
     }
 }
 
-@media only screen and (max-width: 500px) {
-    #believeHealth {
-        width: 310px;
+@media only screen and (min-width: 768px) {
+    #navbar {
+        background-color: rgb(0,0,0,0) !important;
     }
 
-    #believeLogo {
-        width: 130px;
-    }
-    
-    #middleProb {
-        margin-left: -145px;
-        width: 290px;
-    }
-
-    #outerProbs {
-        left: 50%;
-        margin-left: -160px;
-        position: absolute;
-        width: 320px;
-    }
-
-    #prob2 li {
-        margin: 0 !important;
-        width: 290px;
-    }
-
-    #problemList {
-        margin-top: 160px;
-    }
-
-    #problemSection {
-        margin-top: 100px;
-        margin-bottom: 600px;
+    #navbarLinks li a {
+        color: white !important;
     }
 }
